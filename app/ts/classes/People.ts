@@ -11,7 +11,7 @@ export module People {
         private lastName: string;
         private soulName: string;
 
-        constructor(soul: Souls.ISoul) {
+        constructor(private soul: Souls.ISoul) {
             this.soulName = soul.GetSoulName();
         }
 
@@ -24,14 +24,12 @@ export module People {
         }
 
         getFullName(lastNameFirst: boolean = false): string {
-            var fullName;
+            var soulName =  `(My soul is called: '${this.soulName}')`;
             if (lastNameFirst) {
-                fullName = this.lastName + ", " + this.firstName;
+                return `${this.lastName}, ${this.firstName} ${soulName}`;
             }
-            
-            fullName = this.firstName + ", " + this.lastName
-            
-            return fullName + " (My soul is called: '" + this.soulName + "')";
+
+            return `${this.firstName}, ${this.lastName} ${soulName}`;
         }
     }
 }

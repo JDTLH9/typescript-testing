@@ -8,7 +8,7 @@ export module Messages {
         
         constructor(public greeting: string){}
             greet(){
-                return '<div class="message"><h1 class="header1">' + this.greeting + ', ' + this.message.Text + '</h1></div>';
+                return `div class="message"><h1 class="header1">${this.greeting}, ${this.message.Text}</h1></div>`;
             }
     }
 }

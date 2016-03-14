@@ -7,7 +7,7 @@ export module Souls {
         private soulName: string;
         
         constructor() {
-            this.soulName = "Soul has no name!!!!";
+            this.soulName = "My soul has no name!!!!";
         }
         
         GetSoulName(): string {

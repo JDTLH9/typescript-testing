@@ -13,6 +13,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var mainBowerFiles = require('main-bower-files');
 var sourcemaps = require('gulp-sourcemaps');
+var KarmaServer = require('karma').Server;
 
 gulp.task('sass', function() {
     return gulp.src("app/scss/**/*.scss")
@@ -92,5 +93,19 @@ gulp.task('build', function(callback) {
         ['useref', 'images', 'fonts'],
         callback)
 })
+
+gulp.task('test', function (done) {
+  new KarmaServer({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
+
+gulp.task('testw', function (done) {
+  new KarmaServer({
+    configFile: __dirname + '/karma.conf.js',
+    autoWatch: true
+  }, done).start();
+});
 
 gulp.task('default', ['build', 'watch']);

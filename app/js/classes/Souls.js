@@ -8,7 +8,7 @@ System.register([], function(exports_1, context_1) {
             (function (Souls) {
                 var Soul = (function () {
                     function Soul() {
-                        this.soulName = "Soul has no name!!!!";
+                        this.soulName = "My soul has no name!!!!";
                     }
                     Soul.prototype.GetSoulName = function () {
                         return this.soulName;
@@ -22,4 +22,4 @@ System.register([], function(exports_1, context_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvU291bHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztZQUFBLFdBQWMsS0FBSyxFQUFDLENBQUM7Z0JBS2pCO29CQUdJO3dCQUNJLElBQUksQ0FBQyxRQUFRLEdBQUcsc0JBQXNCLENBQUM7b0JBQzNDLENBQUM7b0JBRUQsMEJBQVcsR0FBWDt3QkFDSSxNQUFNLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQztvQkFDekIsQ0FBQztvQkFDTCxXQUFDO2dCQUFELENBVkEsQUFVQyxJQUFBO2dCQVZZLFVBQUksT0FVaEIsQ0FBQTtZQUNMLENBQUMsRUFoQmEsS0FBSyxHQUFMLEtBQUssS0FBTCxLQUFLLFFBZ0JsQjtzQ0FBQSIsImZpbGUiOiJjbGFzc2VzL1NvdWxzLmpzIiwic291cmNlUm9vdCI6Ii90cyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvU291bHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztZQUFBLFdBQWMsS0FBSyxFQUFDLENBQUM7Z0JBS2pCO29CQUdJO3dCQUNJLElBQUksQ0FBQyxRQUFRLEdBQUcseUJBQXlCLENBQUM7b0JBQzlDLENBQUM7b0JBRUQsMEJBQVcsR0FBWDt3QkFDSSxNQUFNLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQztvQkFDekIsQ0FBQztvQkFDTCxXQUFDO2dCQUFELENBVkEsQUFVQyxJQUFBO2dCQVZZLFVBQUksT0FVaEIsQ0FBQTtZQUNMLENBQUMsRUFoQmEsS0FBSyxHQUFMLEtBQUssS0FBTCxLQUFLLFFBZ0JsQjtzQ0FBQSIsImZpbGUiOiJjbGFzc2VzL1NvdWxzLmpzIiwic291cmNlUm9vdCI6Ii90cyJ9
