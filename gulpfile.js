@@ -109,3 +109,4 @@ gulp.task('testw', function (done) {
 });
 
 gulp.task('default', ['build', 'watch']);
+gulp.task('develop', ['build', 'watch', 'testw']);

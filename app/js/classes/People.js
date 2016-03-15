@@ -8,6 +8,7 @@ System.register([], function(exports_1, context_1) {
             (function (People) {
                 var Person = (function () {
                     function Person(soul) {
+                        this.soul = soul;
                         this.soulName = soul.GetSoulName();
                     }
                     Person.prototype.setFirstName = function (value) {
@@ -18,12 +19,11 @@ System.register([], function(exports_1, context_1) {
                     };
                     Person.prototype.getFullName = function (lastNameFirst) {
                         if (lastNameFirst === void 0) { lastNameFirst = false; }
-                        var fullName;
+                        var soulName = "(My soul is called: '" + this.soulName + "')";
                         if (lastNameFirst) {
-                            fullName = this.lastName + ", " + this.firstName;
+                            return this.lastName + ", " + this.firstName + " " + soulName;
                         }
-                        fullName = this.firstName + ", " + this.lastName;
-                        return fullName + " (My soul is called: '" + this.soulName + "')";
+                        return this.firstName + ", " + this.lastName + " " + soulName;
                     };
                     return Person;
                 }());
@@ -34,4 +34,4 @@ System.register([], function(exports_1, context_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvUGVvcGxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7WUFFQSxXQUFjLE1BQU0sRUFBQyxDQUFDO2dCQUtsQjtvQkFNSSxnQkFBWSxJQUFpQjt3QkFDekIsSUFBSSxDQUFDLFFBQVEsR0FBRyxJQUFJLENBQUMsV0FBVyxFQUFFLENBQUM7b0JBQ3ZDLENBQUM7b0JBRUQsNkJBQVksR0FBWixVQUFhLEtBQWE7d0JBQ3RCLElBQUksQ0FBQyxTQUFTLEdBQUcsS0FBSyxDQUFDO29CQUMzQixDQUFDO29CQUVELDRCQUFXLEdBQVgsVUFBWSxLQUFhO3dCQUNyQixJQUFJLENBQUMsUUFBUSxHQUFHLEtBQUssQ0FBQztvQkFDMUIsQ0FBQztvQkFFRCw0QkFBVyxHQUFYLFVBQVksYUFBOEI7d0JBQTlCLDZCQUE4QixHQUE5QixxQkFBOEI7d0JBQ3RDLElBQUksUUFBUSxDQUFDO3dCQUNiLEVBQUUsQ0FBQyxDQUFDLGFBQWEsQ0FBQyxDQUFDLENBQUM7NEJBQ2hCLFFBQVEsR0FBRyxJQUFJLENBQUMsUUFBUSxHQUFHLElBQUksR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDO3dCQUNyRCxDQUFDO3dCQUVELFFBQVEsR0FBRyxJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksR0FBRyxJQUFJLENBQUMsUUFBUSxDQUFBO3dCQUVoRCxNQUFNLENBQUMsUUFBUSxHQUFHLHdCQUF3QixHQUFHLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDO29CQUN0RSxDQUFDO29CQUNMLGFBQUM7Z0JBQUQsQ0E1QkEsQUE0QkMsSUFBQTtnQkE1QlksYUFBTSxTQTRCbEIsQ0FBQTtZQUNMLENBQUMsRUFsQ2EsTUFBTSxHQUFOLE1BQU0sS0FBTixNQUFNLFFBa0NuQjt3Q0FBQSIsImZpbGUiOiJjbGFzc2VzL1Blb3BsZS5qcyIsInNvdXJjZVJvb3QiOiIvdHMifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvUGVvcGxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7WUFFQSxXQUFjLE1BQU0sRUFBQyxDQUFDO2dCQUtsQjtvQkFNSSxnQkFBb0IsSUFBaUI7d0JBQWpCLFNBQUksR0FBSixJQUFJLENBQWE7d0JBQ2pDLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDO29CQUN2QyxDQUFDO29CQUVELDZCQUFZLEdBQVosVUFBYSxLQUFhO3dCQUN0QixJQUFJLENBQUMsU0FBUyxHQUFHLEtBQUssQ0FBQztvQkFDM0IsQ0FBQztvQkFFRCw0QkFBVyxHQUFYLFVBQVksS0FBYTt3QkFDckIsSUFBSSxDQUFDLFFBQVEsR0FBRyxLQUFLLENBQUM7b0JBQzFCLENBQUM7b0JBRUQsNEJBQVcsR0FBWCxVQUFZLGFBQThCO3dCQUE5Qiw2QkFBOEIsR0FBOUIscUJBQThCO3dCQUN0QyxJQUFJLFFBQVEsR0FBSSwwQkFBd0IsSUFBSSxDQUFDLFFBQVEsT0FBSSxDQUFDO3dCQUMxRCxFQUFFLENBQUMsQ0FBQyxhQUFhLENBQUMsQ0FBQyxDQUFDOzRCQUNoQixNQUFNLENBQUksSUFBSSxDQUFDLFFBQVEsVUFBSyxJQUFJLENBQUMsU0FBUyxTQUFJLFFBQVUsQ0FBQzt3QkFDN0QsQ0FBQzt3QkFFRCxNQUFNLENBQUksSUFBSSxDQUFDLFNBQVMsVUFBSyxJQUFJLENBQUMsUUFBUSxTQUFJLFFBQVUsQ0FBQztvQkFDN0QsQ0FBQztvQkFDTCxhQUFDO2dCQUFELENBMUJBLEFBMEJDLElBQUE7Z0JBMUJZLGFBQU0sU0EwQmxCLENBQUE7WUFDTCxDQUFDLEVBaENhLE1BQU0sR0FBTixNQUFNLEtBQU4sTUFBTSxRQWdDbkI7d0NBQUEiLCJmaWxlIjoiY2xhc3Nlcy9QZW9wbGUuanMiLCJzb3VyY2VSb290IjoiL3RzIn0=
