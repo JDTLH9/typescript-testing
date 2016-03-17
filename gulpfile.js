@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var ts = require('gulp-typescript');
-var tsProject = ts.createProject('app/ts/tsconfig.json');
+var tsProject = ts.createProject('tsconfig.json');
 var browserSync = require('browser-sync').create();
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
@@ -64,7 +64,7 @@ gulp.task('typescript', function() {
         .pipe(ts(tsProject));
     return tsResult.js
         .pipe(sourcemaps.write({
-            sourceRoot: '/ts',
+            sourceRoot: '/app/ts',
             includeContent: false
         }))
         .pipe(gulp.dest('app/js'));
