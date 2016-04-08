@@ -1,4 +1,4 @@
-import {Messages} from '../app/ts/classes/Messages';
+import Messages = require('../app/ts/classes/Messages');
 
 describe("Soul Tests", () => {
     

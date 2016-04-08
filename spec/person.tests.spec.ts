@@ -1,5 +1,5 @@
-import {People} from '../app/ts/classes/People';
-import {Souls} from '../app/ts/classes/Souls';
+import People = require('../app/ts/classes/People');
+import Souls = require('../app/ts/classes/Souls');
 
 describe("Person FullName", () => {
 
@@ -9,7 +9,7 @@ describe("Person FullName", () => {
         var soul = jasmine.createSpyObj("soul", ["GetSoulName"]);
         soul.GetSoulName.and.returnValue("I am a happy little soul");
         
-        person = new People.Person(soul);
+        person = new People.Person(<Souls.ISoul>soul);
         person.setFirstName("Joe");
         person.setLastName("Smith");
     });
