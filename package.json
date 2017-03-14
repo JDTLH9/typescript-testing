@@ -4,6 +4,8 @@
   "description": "",
   "author": "JCB",
   "license": "UNLICENSED",
+  "types": "./index.d.ts",
+  "repository": {},
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "del": "^2.2.0",
@@ -19,7 +21,6 @@
     "gulp-useref": "^3.0.5",
     "main-bower-files": "^2.11.1",
     "run-sequence": "^1.1.5",
-    "typescript": "^1.9.0-dev.20160209",
     "karma": "^0.13.21",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.7",
@@ -27,5 +28,9 @@
     "karma-systemjs": "^0.12.0",
     "phantomjs-polyfill": "0.0.2",
     "phantomjs-prebuilt": "^2.1.4"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.5.41",
+    "@types/karma-jasmine": "0.0.29"
   }
 }

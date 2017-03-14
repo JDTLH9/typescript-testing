@@ -5,17 +5,18 @@ System.register([], function(exports_1, context_1) {
     return {
         setters:[],
         execute: function() {
-            class Soul {
-                constructor() {
+            Soul = (function () {
+                function Soul() {
                     this.soulName = "My soul has no name!!!!";
                 }
-                GetSoulName() {
+                Soul.prototype.GetSoulName = function () {
                     return this.soulName;
-                }
-            }
+                };
+                return Soul;
+            }());
             exports_1("Soul", Soul);
         }
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvU291bHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztZQUlBO2dCQUdJO29CQUNJLElBQUksQ0FBQyxRQUFRLEdBQUcseUJBQXlCLENBQUM7Z0JBQzlDLENBQUM7Z0JBRUQsV0FBVztvQkFDUCxNQUFNLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQztnQkFDekIsQ0FBQztZQUNMLENBQUM7WUFWRCx1QkFVQyxDQUFBIiwiZmlsZSI6ImNsYXNzZXMvU291bHMuanMiLCJzb3VyY2VSb290IjoiL2FwcC90cyJ9
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvU291bHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztZQUlBO2dCQUdJO29CQUNJLElBQUksQ0FBQyxRQUFRLEdBQUcseUJBQXlCLENBQUM7Z0JBQzlDLENBQUM7Z0JBRUQsMEJBQVcsR0FBWDtvQkFDSSxNQUFNLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQztnQkFDekIsQ0FBQztnQkFDTCxXQUFDO1lBQUQsQ0FWQSxBQVVDLElBQUE7WUFWRCx1QkFVQyxDQUFBIiwiZmlsZSI6ImNsYXNzZXMvU291bHMuanMiLCJzb3VyY2VSb290IjoiL2FwcC90cyJ9
