@@ -8,7 +8,7 @@ System.register([], function(exports_1, context_1) {
             Greeter = (function () {
                 function Greeter(greeting) {
                     this.greeting = greeting;
-                    this.message = { Text: "Every People" };
+                    this.message = { Text: "to all my friends and family" };
                 }
                 Greeter.prototype.greet = function () {
                     return "<div class=\"message\"><h1 class=\"header1\">" + this.greeting + ", " + this.message.Text + "</h1></div>";
@@ -20,4 +20,4 @@ System.register([], function(exports_1, context_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvTWVzc2FnZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztZQUlBO2dCQUdJLGlCQUFtQixRQUFnQjtvQkFBaEIsYUFBUSxHQUFSLFFBQVEsQ0FBUTtvQkFGM0IsWUFBTyxHQUFZLEVBQUMsSUFBSSxFQUFFLGNBQWMsRUFBQyxDQUFDO2dCQUViLENBQUM7Z0JBQ2xDLHVCQUFLLEdBQUw7b0JBQ0ksTUFBTSxDQUFDLGtEQUE0QyxJQUFJLENBQUMsUUFBUSxVQUFLLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxnQkFBYSxDQUFDO2dCQUN4RyxDQUFDO2dCQUNULGNBQUM7WUFBRCxDQVBBLEFBT0MsSUFBQTtZQVBELDZCQU9DLENBQUEiLCJmaWxlIjoiY2xhc3Nlcy9NZXNzYWdlcy5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3RzIn0=
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsYXNzZXMvTWVzc2FnZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7OztZQUlBO2dCQUdJLGlCQUFtQixRQUFnQjtvQkFBaEIsYUFBUSxHQUFSLFFBQVEsQ0FBUTtvQkFGM0IsWUFBTyxHQUFZLEVBQUMsSUFBSSxFQUFFLDhCQUE4QixFQUFDLENBQUM7Z0JBRTdCLENBQUM7Z0JBQ2xDLHVCQUFLLEdBQUw7b0JBQ0ksTUFBTSxDQUFDLGtEQUE0QyxJQUFJLENBQUMsUUFBUSxVQUFLLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxnQkFBYSxDQUFDO2dCQUN4RyxDQUFDO2dCQUNULGNBQUM7WUFBRCxDQVBBLEFBT0MsSUFBQTtZQVBELDZCQU9DLENBQUEiLCJmaWxlIjoiY2xhc3Nlcy9NZXNzYWdlcy5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3RzIn0=

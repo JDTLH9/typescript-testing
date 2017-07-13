@@ -2,14 +2,13 @@ import {Person} from '../app/ts/classes/People';
 import {ISoul} from '../app/ts/classes/Souls';
 
 describe("Person FullName", () => {
-
-    var person;
+    let person;
 
     beforeEach(() => {
-        var soul = jasmine.createSpyObj("soul", ["GetSoulName"]);
-        soul.GetSoulName.and.returnValue("I am a happy little soul");
+        let soul: ISoul = jasmine.createSpyObj<ISoul>("soul", ["GetSoulName"]);
+        (<jasmine.Spy>soul.GetSoulName).and.returnValue("I am a happy little soul");
         
-        person = new Person(<ISoul>soul);
+        person = new Person(soul);
         person.setFirstName("Joe");
         person.setLastName("Smith");
     });

@@ -3,7 +3,7 @@ export interface Message{
 }
 
 export class Greeter{
-    private message: Message = {Text: "Every People"};
+    private message: Message = {Text: "to all my friends and family"};
     
     constructor(public greeting: string){}
         greet(){
